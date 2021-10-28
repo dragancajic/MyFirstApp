@@ -1,6 +1,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext.kotlin_version = "1.5.20"
+
+    // for MULTI-MODULE project
+    ext.gson_version = "2.8.8" // <-- project wide variable!
+
+    // So, that's how you can use gradle variables to manage library versions
+    // either locally in the module's version of the gradle build file or
+    // globally in the project's version.
+
     repositories {
         google()
         mavenCentral()
